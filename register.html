@@ -89,25 +89,47 @@
     <!-- Navbar End -->
 
     <div class="container-fluid px-lg-5 d-none d-lg-block">
-        <div class="main-login pt-5 pb-3">
-            <div class="left-login">
-                <img src="img/cinemaLogin.svg" alt="Cinema Animate" style="width: 550px;">
-            </div>
-            <div class="right-login">
-                <div class="card-login">
-                    <h1>LOGIN</h1>
-                    <div class="textfield">
-                        <label for="user">User</label>
-                        <input type="text" name="user" placeholder="User" required>
+
+        <div class="main-login pt-5 pb-5">
+            <form class="card-login">
+                <div class="form-row">
+                    <div class="form-group col-md-6 textfield ">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" name="firstName" id="inputFirstName" placeholder="Maria" required>
                     </div>
-                    <div class="textfield">
-                        <label for="pass">Password</label>
-                        <input type="password" name="pass" placeholder="Password" required>
+                    
+                    <div class="form-group col-md-6 textfield">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" name="lastName" id="inputLastName" placeholder="Silva" required>
                     </div>
-                    <button class="btn-login">Login</button>
-                    <a href="register.html">Create an Account</a>
+
+                    <div class="form-group col-md-6 textfield">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" name="email" id="inputEmail" placeholder="mariasilva@email.com" required>
+                    </div>
+
+                    <div class="form-group col-md-6 textfield">
+                        <label>Password</label>
+                        <div class="password-group textfield m-0">
+                            <input id="password-field" type="password" name="password" placeholder="•••••••••••" required>
+                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password ml-2 mt-3"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6 textfield">
+                        <label for="inputCpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="123.456.789-00" required>
+                    </div>
+                    
+                    <div class="form-group col-md-6 textfield">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="(11) 91234-5678" required>
+                    </div>
+                   
                 </div>
-            </div>
+                
+                <button type="submit" class="btn-login">Register</button>
+            </form>
         </div>
     </div>
         

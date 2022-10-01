@@ -413,3 +413,7 @@ h6,
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #f77d0a56;
 }
+
+.password-group{
+    flex-direction: row;
+}
